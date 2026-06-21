@@ -7,7 +7,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/dea98f1693.js" crossorigin="anonymous"></script>
+
+    <script src="macy.js"></script>
 
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
@@ -15,88 +19,98 @@
     <title>Itsuki Hirano - Portfolio</title>
 </head>
 <body>
+    <div id="container">
+        <header>
+            <h1>Itsuki Hirano</h1>
 
-    <section>
-        <div>
-            <header>
-                <h1>Itsuki Hirano</h1>
-            </header>
-            <!-- <div id="intro">
-                <p>Hi I'm Itsuki, an undergraduate Design student at UC Davis.</p>
-
-                <p>In web design and UI/UX, I am able to work in the design end using Figma, and I also have front end development skills with HTML, CSS, and JavaScript.</p>
-
-                <p>In graphic design, I have a wide range of skills from graphics, flyers, to document design. I have an extensive experience working with design in marketing and event planning with the Davis Anime Convention directing team.</p>
-
-                <p>I also have some experience working with motion graphics using After Effects, and I'm eager to learn other aspects of design that could be useful as well!</p>
-            </div> -->
-
-            <div id="pages">
-                <a href="index.html" class="currentPage">UI/UX and Interactive Media</a>
-                <a href="graphicDesign.html">Graphic Design</a>
+            <div id="menuMobile">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </div>     
-    </section>
-    
-    
-    <main>
-        
-        
-        <h2>UI/UX and Interactive Media</h2>
 
-        <div id="articles">
-            <article>
-                <h3>Game On! - Space Fighter</h3>
-                <div class="imgContainer">
-                    <img src="images/gameOn.jpg" alt="Game On! screenshot" width="1000" height="600">
-                </div>
-                <div>
+            <div id="menuDesk">
+                <ul>
+                    <li>Home</li>
+                    <li>DAiCon</li>
+                    <li>Pangaea</li>
+                    <li>Other Works</li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section id="intro">
+                <h2>Hi, I'm Itsuki!</h2>
+                <p>I am a designer and UC Davis graduate</p>
+
+                <div id="feature">
+                    <div id="left" class="cntrl"><i class="fa-solid fa-angle-left"></i></div>
+
                     
-                    <p>A project to redesign a simple game of dice.</p>
-                    <div class="contents">
-                        <!-- <a href="#">Read More</a> -->
-                        <a href="https://itsuki-hirano-12.github.io/github/game/v2/index.html" target="_blank" rel="noopener noreferrer">Try the game!</a>
+                    <img src="images/collage-daicon.jpg" alt="thumbnail image" width="800" height="500">
+
+                    <div id="title">
+                        <p>Davis Anime Convention</p>
                     </div>
-                </div> 
-            </article>
-
-            <article>
-                <h3>Every Picture</h3>
-                <div class="imgContainer">
-                    <img src="images/everyPic.jpg" alt="Every Picture screenshot" width="1000" height="627">
-                </div>
-                
-                <div>
                     
-                    <p>A project to interact with personal images.</p>
-                    <div class="contents">
-                        <!-- <a href="#">Read More</a> -->
-                        <a href="https://itsuki-hirano-12.github.io/github/everyPicture/improvements/index.html" target="_blank" rel="noopener noreferrer">Try the interaction!</a>
+                    <div id="right" class="cntrl"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </section>
+            
+            <section id="major">
+                <article id="daicon">
+                    <h3>Davis Anime Convention</h3>
+
+                    <div class="images">
+                        <img src="images/daicon-flyer.jpg" alt="daicon flyer">
+                        <img src="images/daicon-pamph26.jpg" alt="daicon pamphlet">
+                        <img src="images/daicon-badge.jpg" alt="daicon badge design">
+                        <img src="daicon/images/vgo.jpg" alt="daicon graphic">
                     </div>
-                </div> 
-            </article>
 
-            <article>
-                <h3>Neighbor Shop</h3>
-                <div class="imgContainer">
-                    <img src="images/des112.jpg" alt="Neighbor Shop image" width="1000" height="562">
+                    <div class="btn">
+                        <p><a>See Full Works</a></p>
+                    </div>
+                </article>
+
+                <article id="pangaea">
+                    <h3>Pangaea - Interactive Design Capstone</h3>
+                </article>
+            </section>
+
+            <section id="other">
+                <div id="selector">
+                    <div id="web">
+                        <p>UI/UX & Interactive Design</p>
+                    </div>
+
+                    <div id="graphic">
+                        <p>Graphic Design</p>
+                    </div>
                 </div>
-                
-                <div>
+
+                <article id="webWorks" class="gallery">                    
+                    <img src="images/gameOn.jpg" alt="Star Fighter" class="item" id="star">
                     
-                    <p>A prototype of a neighborhood grocery sharing service.</p>
-                    <div class="contents">
-                        <a href="https://drive.google.com/file/d/1yy7KCaBB2B6uX1J1N6_kaSZ4TLzagnlJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Read the project case study</a>
-                        <a href="https://www.figma.com/design/iiGe0X2gabvAbRxahcjnuI/P2-Final-Version?node-id=55-450&t=jCWsWAJnIyn4dmKv-1" target="_blank" rel="noopener noreferrer">View project on Figma</a>
-                    </div>   
-                </div> 
-        </article>
+                    <img src="images/dacinator1.jpg" alt="DAC-inator" class="item" id="dacinator">
+                    
+                    <img src="images/selfcheck.jpg" alt="Check Self" class="item" id="selfcheck">
 
-        </div>
+                    <img src="images/wordwall.jpg" alt="Global Word Wall" class="item" id="wordwall">
 
-        
-    </main>
-    
-    
+                    <img src="images/des112.jpg" alt="Neighbor Shop" class="item" id="des112">
+                </article>
+
+                <article id="graphicWorks" class="gallery">
+                    <img src="images/kon.jpg" alt="Kon Chips" class="item" id="kon">
+
+                    <img src="images/poster.jpg" alt="Event Poster" class="item" id="poster">
+
+                    <img src="images/book.jpg" alt="Typographic Book" class="item" id="book">
+
+                    <img src="images/type-poster.jpg" alt="Typographic Poster" class="item" id="type">
+                </article>
+            </section>
+        </main>
+    </div>   
 </body>
 </html>
