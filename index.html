@@ -23,24 +23,24 @@
         <header>
             <h1>Itsuki Hirano</h1>
 
-            <div id="menuMobile">
+            <!-- <div id="menuMobile">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </div> -->
 
             <div id="menuDesk">
                 <ul>
-                    <li>Home</li>
-                    <li>DAiCon</li>
-                    <li>Pangaea</li>
-                    <li>Other Works</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="daicon/daicon.html">DAiCon</a></li>
+                    <!-- <li><a href="#pangaea">Pangaea</a></li> -->
+                    <li><a href="#other">Other Works</a></li>
                 </ul>
             </div>
         </header>
 
         <main>
             <section id="intro">
-                <h2>Hi, I'm Itsuki!</h2>
-                <p>I am a designer and UC Davis graduate</p>
+                <!-- <h2>Hi, I'm Itsuki</h2>
+                <p>I am a designer and UC Davis graduate</p> -->
 
                 <div id="feature">
                     <div id="left" class="cntrl"><i class="fa-solid fa-angle-left"></i></div>
@@ -60,57 +60,249 @@
                 <article id="daicon">
                     <h3>Davis Anime Convention</h3>
 
-                    <div class="images">
+                    <div id="daicon-images">
                         <img src="images/daicon-flyer.jpg" alt="daicon flyer">
                         <img src="images/daicon-pamph26.jpg" alt="daicon pamphlet">
                         <img src="images/daicon-badge.jpg" alt="daicon badge design">
                         <img src="daicon/images/vgo.jpg" alt="daicon graphic">
                     </div>
 
-                    <div class="btn">
-                        <p><a>See Full Works</a></p>
+                    <div class="btns">
+                        <a href="daicon/daicon.html">
+                            <div class="btn">
+                                <p>See Full Works</p>
+                            </div>
+                        </a>
                     </div>
+
+                    
+                    
                 </article>
 
                 <article id="pangaea">
                     <h3>Pangaea - Interactive Design Capstone</h3>
+
+                    <div id="pangaea-images">
+                        <img src="images/pangaea1.jpg" alt="pangaea screenshot 1">
+                        <img src="images/pangaea2.jpg" alt="pangaea screenshot 2">
+                    </div>
+
+                    <div class="btns">
+                        <a href="https://itsuki-hirano-12.github.io/des157b/capstone/final/index.html">
+                            <div class="btn">
+                                <p>View Project</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://docs.google.com/presentation/d/1q34tW_nCI36XZ49X_ayK4ChYQ1wFrUawabwLMKEOGYE/edit?usp=sharing">
+                            <div class="btn"><p>Process Works & Case Study</p></div>
+                        </a>
+
+                    </div>
                 </article>
             </section>
 
             <section id="other">
                 <div id="selector">
-                    <div id="web">
+                    <div id="web" class="active">
+                        <div id="webAnimate" class="animator"></div>
                         <p>UI/UX & Interactive Design</p>
                     </div>
 
-                    <div id="graphic">
+                    <div id="graphic" class="inactive">
+                        <div id="graphicAnimate" class="animator"></div>
                         <p>Graphic Design</p>
                     </div>
                 </div>
 
-                <article id="webWorks" class="gallery">                    
-                    <img src="images/gameOn.jpg" alt="Star Fighter" class="item" id="star">
-                    
-                    <img src="images/dacinator1.jpg" alt="DAC-inator" class="item" id="dacinator">
-                    
-                    <img src="images/selfcheck.jpg" alt="Check Self" class="item" id="selfcheck">
+                <article id="webWorks" >
+                    <div class="gallery" id="webGallery">
+                        <img src="images/gameOn.jpg" alt="Star Fighter" class="item" id="star">
+                        
+                        <img src="images/selfcheck.jpg" alt="Check Self" class="item" id="selfcheck">
 
-                    <img src="images/wordwall.jpg" alt="Global Word Wall" class="item" id="wordwall">
+                        <!-- <img src="images/dacinator1.jpg" alt="DAC-inator" class="item" id="dacinator"> -->
 
-                    <img src="images/des112.jpg" alt="Neighbor Shop" class="item" id="des112">
+                        <img src="images/wordwall.jpg" alt="Global Word Wall" class="item" id="wordwall">
+
+                        <img src="images/des112.jpg" alt="Neighbor Shop" class="item" id="des112">
+                    </div>                   
+
                 </article>
 
-                <article id="graphicWorks" class="gallery">
-                    <img src="images/kon.jpg" alt="Kon Chips" class="item" id="kon">
+                <article id="graphicWorks" class="off">
+                    <div class="gallery" id="graphicGallery">
+                        <img src="images/kon.jpg" alt="Kon Chips" class="item" id="kon">
 
-                    <img src="images/poster.jpg" alt="Event Poster" class="item" id="poster">
+                        <img src="images/bookthumb.jpg" alt="Typographic Book" class="item" id="book">
 
-                    <img src="images/book.jpg" alt="Typographic Book" class="item" id="book">
+                        <img src="images/posterthumb.jpg" alt="Event Poster" class="item" id="poster">
 
-                    <img src="images/type-poster.jpg" alt="Typographic Poster" class="item" id="type">
+                        <img src="images/type-posterthumb.jpg" alt="Typographic Poster" class="item" id="type">
+                    </div>                    
                 </article>
             </section>
         </main>
+
+        <div id="overlay" class="off">
+            
+            
+            <article class="off" id="starOver">
+                <div class="close">
+                    <p>close</p>
+                </div>
+
+                <h3>Star Fighter</h3>
+
+                <p>A project to redesign a simple game of dice</p>
+                <!-- <p>Winter 2026</p> -->
+
+                <img src="images/gameOn.jpg" alt="Star Fighter screen 1">
+                <img src="images/gameOn2.jpg" alt="Star Fighter screen 2">
+
+                <a href="https://itsuki-hirano-12.github.io/github/game/v2/index.html" target="_blank">
+                    <div class="btn">
+                        <p>Try the Game!</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="off" id="selfcheckOver">
+                <div class="close">
+                    <p>close</p>
+                </div>
+                <h3>Check Yourself</h3>
+
+                <p>A data visualization project tracking my travel distance during a day</p>
+
+                <!-- <p>Spring 2026</p> -->
+
+                <img src="images/selfcheck1.jpg" alt="Check Self screen 1">
+
+                <img src="images/selfcheck.jpg" alt="Check Self screen 2">
+                
+                <a href="https://itsuki-hirano-12.github.io/des157b/studio2/index.html" target="_blank">
+                    <div class="btn">
+                        <p>Check the Project</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- <article class="popup" id="dacinatorOver">
+                <h3>DAC-inator</h3>
+
+                <p>A short interaction made for Davis Anime Club's tabling at UC Davis Picnic Day. Inspired by the game Akinator, the user is asked a few questions to reach a specific anime.</p>
+
+                <p>Images used in this project belong to their rightful c.</p>
+            </article> -->
+
+            <article class="off" id="wordwallOver">
+                <div class="close">
+                    <p>close</p>
+                </div>
+                <h3>Global Word Wall</h3>
+
+                <p>An interactive project to gather words from around the world.</p>
+                <p>Please try adding a word to the wall!</p>
+
+                <!-- <p>Spring 2026</p> -->
+
+                <img src="images/wordwall.jpg" alt="word wall screenshot 1">
+                <img src="images/wordwall2.jpg" alt-="word wall screenshot 2">
+            
+                <a href="https://itsuki-hirano-12.github.io/des157b/studio3/index.html" target="_blank">
+                    <div class="btn">
+                        <p>Check the Project</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="off" id="des112Over">
+                <div class="close">
+                    <p>close</p>
+                </div>
+                <h3>Neighbor Shop</h3>
+
+                <p>A prototype of a neighborhood grocery sharing service.</p>
+
+                <img src="images/des112.jpg" alt="Neighbor Shop visual">
+
+                <div class="btns">
+                    <a href="https://www.figma.com/design/iiGe0X2gabvAbRxahcjnuI/P2-Final-Version?node-id=55-450&t=jCWsWAJnIyn4dmKv-1" target="_blank">
+                        <div class="btn">
+                            <p>View Project</p>
+                        </div>
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1yy7KCaBB2B6uX1J1N6_kaSZ4TLzagnlJ/view?usp=drive_link" target="_blank">
+                        <div class="btn">
+                            <p>Read the Case Study</p>
+                        </div>
+                    </a>
+                </div>
+            </article>
+
+            <article class="off" id="konOver">
+                <div class="close">
+                    <p>close</p>
+                </div>
+                <h3>Kon Chips</h3>
+
+                <p>A brand design project creating an imaginary insect based snack.</p>
+
+                <img src="images/kon.jpg">
+                
+                <a>
+                    <div class="btn">
+                        <p>Read the case study</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="off" id="bookOver">
+                <div class="close">
+                    <p>close</p>
+                </div>
+                <h3>Typographic Booklet</h3>
+
+                <p>A booklet design focusing on the word "play"</p>
+
+                <img src="images/book.jpg" alt="booklet screenshot">
+                <img src="images/book2.jpg" alt="booklet screenshot page 2">
+
+                <a>
+                    <div class="btn">
+                        <p>View full document</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="off" id="posterOver">
+                <div class="close">
+                    <p>close</p>
+                </div>
+                <h3>Event Poster</h3>
+
+                <p>A poster redesign project for an existing music concert</p>
+
+                <img src="images/poster.jpg" alt="event poster">
+            </article>
+
+            <article class="off" id="typeOver">
+                <div class="close">
+                    <p>close</p>
+                </div>
+                <h3>Typographic Poster</h3>
+
+                <p>A poster design featuring the type Letter Gothic</p>
+
+                <img src="images/type-poster.jpg" alt="letter gothic poster">
+            </article>
+
+            
+        </div>
+
+        
     </div>   
 </body>
 </html>
