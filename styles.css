@@ -145,7 +145,7 @@ h3 {
 #selector {
     margin: 20px auto 0;
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     border: #53b28f 1px solid;
     display: flex;
     gap: 20px;
@@ -195,6 +195,16 @@ h3 {
 
 .off {
     display: none;
+}
+
+#motionGallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+video {
+    max-width: 98%;
 }
 
 /* daicon page */
@@ -322,6 +332,17 @@ a {
 
     #major article {
         flex: 1;
+    }
+
+    #motionGallery {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    video {
+        flex: 1;
+        max-width: 48%;
     }
 
     /* daicon */
